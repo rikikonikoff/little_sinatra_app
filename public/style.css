@@ -1,0 +1,30 @@
+body {
+  font-family: fantasy;
+}
+
+input[type='radio'] {
+  display: none;
+}
+
+input[type='radio'] + label span:before {
+  font-size: xx-small;
+  content: '...';
+  text-align: center;
+  vertical-align: middle;
+  display: inline-block;
+	height: 15px;
+	width: 15px;
+	background: #59CA59;
+	border-radius: 50%;
+  margin-bottom: 3.5px;
+}
+
+label {
+	cursor: pointer;
+	margin: 10px 10px;
+}
+
+input[type='radio']:checked + label span:before {
+  content: '!';
+  font-size: small;
+}
